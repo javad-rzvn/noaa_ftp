@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "noaa_ftp"
-version = "0.1.6"
+version = "0.1.7"
 description = "A python package to work with NOAA FTP"
 authors = ["javad <javad.rezvanpour@gmail.com>"]
 
