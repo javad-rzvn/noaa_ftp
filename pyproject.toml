@@ -1,9 +1,9 @@
 [tool.poetry]
 name = "noaa_ftp"
-version = "0.1.9"
+version = "0.1.10"
 description = "A python package to work with NOAA FTP"
 authors = ["javad <javad.rezvanpour@gmail.com>"]
-readme = 'README.rst'
+readme = 'README.md'
 keywords = ['noaa','ftp']
 
 [tool.poetry.dependencies]
