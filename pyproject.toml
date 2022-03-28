@@ -3,6 +3,7 @@ name = "noaa_ftp"
 version = "0.1.7"
 description = "A python package to work with NOAA FTP"
 authors = ["javad <javad.rezvanpour@gmail.com>"]
+readme = 'README.rst'
 
 [tool.poetry.dependencies]
 python = "^3.7"
