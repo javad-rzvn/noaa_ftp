@@ -1,13 +1,12 @@
 [tool.poetry]
 name = "noaa_ftp"
-version = "0.1.4"
+version = "0.1.5"
 description = "A python package to work with NOAA FTP"
 authors = ["javad <javad.rezvanpour@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.7"
 progressbar2 = "4.0.0"
-tqdm = "4.63.1"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"

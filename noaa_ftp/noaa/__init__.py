@@ -1,8 +1,6 @@
 import os
 import time
 from ftplib import FTP
-import urllib
-from tqdm import tqdm
 # pip install progressbar2
 from progressbar import AnimatedMarker, Bar, BouncingBar, Counter, ETA, \
     AdaptiveETA, FileTransferSpeed, FormatLabel, Percentage, \
@@ -15,13 +13,11 @@ class NOAA:
         self.url = url
 
 
-    def dir(self):
-        download_url = self.url
-        with urllib.request.urlopen(download_url) as r:
-            data = r.read().splitlines()
-
-        for l in data:
-            print (l)
+    def dir(self, folder_path):
+        ftp = FTP(self.url)
+        ftp.login()
+        ftp.cwd(folder_path)
+        ftp.retrlines('LIST')
 
 
     def download(self, folder_path, filename):
