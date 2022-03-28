@@ -1,7 +1,7 @@
 import os
 import time
 from ftplib import FTP
-import urllib.request
+import urllib
 from tqdm import tqdm
 # pip install progressbar2
 from progressbar import AnimatedMarker, Bar, BouncingBar, Counter, ETA, \
