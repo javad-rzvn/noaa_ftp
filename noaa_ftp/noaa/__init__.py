@@ -9,22 +9,23 @@ from progressbar import AnimatedMarker, Bar, BouncingBar, Counter, ETA, \
 
 
 class NOAA:
-    def __init__(self, url):
+    def __init__(self, url, dir_path):
         self.url = url
+        self.dir_path = dir_path
 
 
-    def dir(self, folder_path):
+    def dir(self):
         ftp = FTP(self.url)
         ftp.login()
-        ftp.cwd(folder_path)
+        ftp.cwd(self.dir_path)
         ftp.retrlines('LIST')
 
 
-    def download(self, folder_path, filename):
-        global pbar, i
+    def download(self, filename):
+        global pbar
         ftp = FTP(self.url)
         ftp.login()
-        ftp.cwd(folder_path)
+        ftp.cwd(self.dir_path)
         # ftp.retrlines('LIST')
         
         def file_write(data):
