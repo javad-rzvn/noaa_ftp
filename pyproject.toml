@@ -3,6 +3,7 @@ name = "noaa_ftp"
 version = "0.1.11"
 description = "A python package to work with NOAA FTP"
 authors = ["javad-rzvn <javad.rezvanpour@gmail.com>"]
+repository = "https://github.com/javad-rzvn/noaa_ftp"
 readme = 'README.md'
 keywords = ['noaa','ftp']
 
